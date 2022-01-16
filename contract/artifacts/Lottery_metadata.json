@@ -19,6 +19,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getPlayers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "manager",
 				"outputs": [
 					{
@@ -78,17 +91,17 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"RemixProjects/LotteryProject/contract/ballot.sol": {
-			"keccak256": "0x64c0981939854f98eeeb0effc79a052fc7e975e9f04f2c4d2a7f9b2d5741f4a6",
+			"keccak256": "0xf2a4b1a01cfcaaf237a146895828b396695ac1cf189b1c6a3ab92a46c4e57a5d",
 			"urls": [
-				"bzz-raw://7a9dbfa0dc119284527e57fef84ed02f75733010332b5db7a9120dbd06810f58",
-				"dweb:/ipfs/QmXoVt7QZXExUHptaRBbktXUYkkVqgP8avWBBayTtick3K"
+				"bzz-raw://a7818c5a74f44bc7016809bbf4a85b93cd53d9aa94704a16d8ccba1b89b8f355",
+				"dweb:/ipfs/Qmc2bp6V1xkTUpRP1XQAsVHxYnWa93UEKnf91U4uaHBfjA"
 			]
 		}
 	},

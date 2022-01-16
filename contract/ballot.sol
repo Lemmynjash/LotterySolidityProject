@@ -24,10 +24,21 @@ contract Lottery{
 
     }
 
-    function pickWinner() public{
+    function pickWinner() public restrictedUsers {
+        //require(msg.sender == manager);
         uint theRandomPlayerWhoJustWonLotteryindex= random()%players.length;
 
         payable(players[theRandomPlayerWhoJustWonLotteryindex]).transfer(address(this).balance);
-
+        players=new address[](0); //resset players
     }
+
+    modifier restrictedUsers(){
+        require(msg.sender == manager);
+        _;
+    }
+    function getPlayers() public view returns (address[] memory){
+        return players;
+    }
+
+
 }
